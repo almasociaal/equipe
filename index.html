@@ -9,15 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;0,800;1,200;1,700;1,800&display=swap" rel="stylesheet">
 <!--
   ANTES DE ENVIAR
-  0. SAUDAÇÃO NOMINAL: troque as 2 ocorrências de [[PRIMEIRO_NOME]] (pré-cabeçalho e
-     saudação da Ava) pela tag de primeiro nome da sua ferramenta. Exemplos:
-       Mailchimp ........ *|FNAME|*
-       HubSpot .......... {{ contact.firstname }}
-       Brevo ............ {{ contact.FIRSTNAME }}
-     O nome vem do cadastro do contato ligado ao e-mail do destinatário.
-     Configure um valor padrão (ex.: "pessoal") para quem estiver sem nome cadastrado.
-  1. IMAGENS: hospedadas no gerenciador de arquivos do RD Station
-     (https://email-editor-production.s3.amazonaws.com/images/369019/). Os nomes dos arquivos precisam ser exatamente os da pasta imagens/.
+  0. SAUDAÇÃO NOMINAL: usa a variável do RD Station *|PRIMEIRO_NOME|* (pré-cabeçalho e
+     saudação da Ava). O RD preenche com o primeiro nome do cadastro de cada lead.
+  1. IMAGENS: hospedadas no gerenciador de arquivos do RD Station (https://email-editor-production.s3.amazonaws.com/images/369019/).
   2. FOTOS: recortadas em quadrado de 192 x 192 px, a partir do arquivo enviado pela equipe.
   3. Os 17 links do Drive já estão aplicados. Confira se cada pasta está compartilhada
      com a pessoa certa (ou com "qualquer pessoa da organização com o link").
@@ -41,7 +35,7 @@
 </style>
 </head>
 <body style="margin:0;padding:0;background:#F4EBCB;">
-<div style="display:none;max-height:0;overflow:hidden;opacity:0;">[[PRIMEIRO_NOME]], seu post, stories e capa do LinkedIn estão prontos. Em cinco passos, você participa da transição.</div>
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">*|PRIMEIRO_NOME|*, o seu enxoval de redes sociais do Instituto Alma Social já está disponível.</div>
 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F4EBCB;">
 <tr><td align="center" style="padding:28px 10px;">
@@ -57,7 +51,7 @@
         <span style="font-weight:200;font-style:italic;">O ICE SE EXPANDE PARA</span><br>
         <span style="font-weight:800;font-style:italic;color:#B5A36D;">INSTITUTO ALMA SOCIAL.</span>
       </h1>
-      <p style="margin:16px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#FEF7DD;">Um convite para a nossa equipe fazer parte da transição.</p>
+      <p style="margin:16px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#FEF7DD;">Um novo momento que também se conta pela voz de quem o constrói.</p>
     </td></tr>
     <tr><td align="left"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="54" height="30" style="border-bottom:10px solid #B5A36D;border-left:10px solid #B5A36D;border-bottom-left-radius:20px;font-size:0;line-height:0;">&nbsp;</td></tr></table></td></tr>
   </table>
@@ -70,67 +64,72 @@
       <img src="https://email-editor-production.s3.amazonaws.com/images/369019/ava-alma-social.jpg" width="190" alt="Ava, do Instituto Alma Social" style="display:block;width:190px;max-width:100%;height:auto;border:0;border-radius:0 28px 0 28px;">
     </td>
     <td class="ava" valign="middle">
-      <p style="margin:0 0 12px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:28px;line-height:32px;font-weight:800;font-style:italic;color:#7A0E2A;">Oi, [[PRIMEIRO_NOME]]!</p>
-      <p style="margin:0 0 12px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Eu sou a Ava. Neste e-mail, vou explicar o que preparamos para você e como usar cada arquivo, passo a passo.</p>
-      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">É um convite: você participa quando e como fizer sentido para você.</p>
+      <p style="margin:0 0 12px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:28px;line-height:32px;font-weight:800;font-style:italic;color:#7A0E2A;">Olá, *|PRIMEIRO_NOME|*!</p>
+      <p style="margin:0 0 12px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Eu sou a Ava e vou acompanhar você na chegada do Instituto Alma Social. Preparamos um enxoval de redes sociais com a sua imagem, pensado para que a nova marca também ganhe voz por meio de quem a constrói no dia a dia.</p>
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">A seguir, apresento o que está disponível e como utilizar cada material.</p>
     </td>
   </tr></table>
 </td></tr>
 
 <!-- POR QUE -->
 <tr><td class="pad" style="padding:30px 44px 8px 44px;">
-  <p style="margin:0 0 12px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;font-weight:800;font-style:italic;color:#7A0E2A;">Por que esse convite?</p>
-  <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">O Instituto Alma Social nasce hoje, mas é resultado de 27 anos de <strong>um fazer construído em aliança</strong>.</p>
-  <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Nós somos uma marca que nasce das relações e ganha força quando é contada pelas pessoas que a constroem. Os perfis do Instituto no Instagram e no LinkedIn já estão com o novo nome, e a sua rede pode ajudar essa notícia a chegar mais longe.</p>
+  <p style="margin:0 0 12px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;font-weight:800;font-style:italic;color:#7A0E2A;">Uma nova fase da mesma história</p>
+  <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">O ICE se expande para Instituto Alma Social. Não se trata de uma ruptura, mas da evolução de uma história: <strong>um fazer construído em aliança, que mobiliza lideranças, se mantém em movimento e transforma compromisso em ação</strong>.</p>
+  <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Alma dá sentido ao fazer e direção ao movimento. Social amplia essa potência por meio das relações, conectando gerações, conhecimentos, recursos e capacidades.</p>
+  <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Por nascer das relações, a marca ganha força quando chega às redes de cada pessoa da equipe. O seu perfil pode ser um dos primeiros lugares onde parceiros, colegas e amigos conhecem o Instituto Alma Social.</p>
 </td></tr>
 
 <!-- PASTA -->
 <tr><td class="pad" style="padding:34px 36px 6px 36px;">
-  <p style="margin:0 8px 18px 8px;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;font-weight:800;font-style:italic;color:#7A0E2A;">O que tem na sua pasta</p>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="col" width="33%" valign="top" style="padding:0 8px;">
+  <p style="margin:0 8px 18px 8px;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;font-weight:800;font-style:italic;color:#7A0E2A;">O que está disponível na sua pasta</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="col" width="50%" valign="top" style="padding:0 14px 24px 8px;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="22" height="14" style="border-top:4px solid #B5A36D;border-left:4px solid #B5A36D;border-top-left-radius:8px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
 <p style="margin:8px 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:17px;line-height:22px;font-weight:800;font-style:italic;color:#7A0E2A;">Post para o feed</p>
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#2E2326;">Uma arte com a sua foto, para publicar no feed do Instagram ou no LinkedIn.</p>
-</td><td class="col" width="33%" valign="top" style="padding:0 8px;">
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#2E2326;">Arte personalizada com a sua foto, para o feed do Instagram ou do LinkedIn.</p>
+</td><td class="col" width="50%" valign="top" style="padding:0 8px 24px 14px;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="22" height="14" style="border-top:4px solid #B5A36D;border-left:4px solid #B5A36D;border-top-left-radius:8px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
 <p style="margin:8px 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:17px;line-height:22px;font-weight:800;font-style:italic;color:#7A0E2A;">Stories</p>
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#2E2326;">A versão vertical da arte, pensada para os stories do Instagram.</p>
-</td><td class="col" width="33%" valign="top" style="padding:0 8px;">
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#2E2326;">Versão vertical da arte, para os stories do Instagram.</p>
+</td></tr><tr><td class="col" width="50%" valign="top" style="padding:0 14px 24px 8px;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="22" height="14" style="border-top:4px solid #B5A36D;border-left:4px solid #B5A36D;border-top-left-radius:8px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
 <p style="margin:8px 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:17px;line-height:22px;font-weight:800;font-style:italic;color:#7A0E2A;">Capa do LinkedIn</p>
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#2E2326;">Uma imagem institucional para o topo do seu perfil profissional.</p>
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#2E2326;">Imagem institucional para o topo do seu perfil profissional.</p>
+</td><td class="col" width="50%" valign="top" style="padding:0 8px 24px 14px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="22" height="14" style="border-top:4px solid #B5A36D;border-left:4px solid #B5A36D;border-top-left-radius:8px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
+<p style="margin:8px 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:17px;line-height:22px;font-weight:800;font-style:italic;color:#7A0E2A;">Sugestão de legenda</p>
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#2E2326;">Texto de apoio para acompanhar a publicação, que pode ser utilizado na íntegra ou adaptado com as suas palavras.</p>
 </td></tr></table>
 </td></tr>
 
 <!-- PASSO A PASSO -->
 <tr><td class="pad" style="padding:36px 44px 4px 44px;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #E6DAB4;"><tr><td style="padding-top:32px;">
-    <p style="margin:0 0 22px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;font-weight:800;font-style:italic;color:#7A0E2A;">Como usar, passo a passo</p>
+    <p style="margin:0 0 22px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;font-weight:800;font-style:italic;color:#7A0E2A;">Como utilizar os materiais</p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
 <td width="56" valign="top" style="padding:0 0 26px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:40px;line-height:40px;font-weight:200;font-style:italic;color:#B5A36D;">1</td>
 <td valign="top" style="padding:2px 0 26px 0;">
-<p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:18px;line-height:23px;font-weight:800;font-style:italic;color:#7A0E2A;">Encontre o seu rosto</p>
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">Logo abaixo está toda a equipe. Clique na sua foto ou no seu nome e a sua pasta no Google Drive vai abrir.</p>
+<p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:18px;line-height:23px;font-weight:800;font-style:italic;color:#7A0E2A;">Acesse a sua pasta</p>
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">Na grade a seguir, clique na sua foto para abrir a sua pasta no Google Drive.</p>
 </td></tr><tr>
 <td width="56" valign="top" style="padding:0 0 26px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:40px;line-height:40px;font-weight:200;font-style:italic;color:#B5A36D;">2</td>
 <td valign="top" style="padding:2px 0 26px 0;">
 <p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:18px;line-height:23px;font-weight:800;font-style:italic;color:#7A0E2A;">Baixe os arquivos</p>
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">No computador, clique com o botão direito no arquivo e escolha <strong>Fazer download</strong>. No celular, abra o arquivo, toque nos três pontinhos e escolha <strong>Fazer download</strong>.</p>
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">No computador: botão direito no arquivo e <strong>Fazer download</strong>. No celular: três pontinhos e <strong>Fazer download</strong>.</p>
 </td></tr><tr>
 <td width="56" valign="top" style="padding:0 0 26px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:40px;line-height:40px;font-weight:200;font-style:italic;color:#B5A36D;">3</td>
 <td valign="top" style="padding:2px 0 26px 0;">
-<p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:18px;line-height:23px;font-weight:800;font-style:italic;color:#7A0E2A;">Publique o post no feed</p>
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">No Instagram, toque em <strong>+</strong>, escolha <strong>Post</strong> e selecione a arte. Escreva a legenda do seu jeito e marque <strong>@institutoalmasocial</strong>. No LinkedIn, o caminho é <strong>Começar um post</strong>, adicionar a imagem e mencionar o <strong>Instituto Alma Social</strong>.</p>
+<p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:18px;line-height:23px;font-weight:800;font-style:italic;color:#7A0E2A;">Publique no feed</p>
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">No Instagram, toque em <strong>+</strong> e escolha <strong>Post</strong>. No LinkedIn, clique em <strong>Começar um post</strong>. Utilize a legenda sugerida e marque <strong>@institutoalmasocial</strong>.</p>
 </td></tr><tr>
 <td width="56" valign="top" style="padding:0 0 26px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:40px;line-height:40px;font-weight:200;font-style:italic;color:#B5A36D;">4</td>
 <td valign="top" style="padding:2px 0 26px 0;">
 <p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:18px;line-height:23px;font-weight:800;font-style:italic;color:#7A0E2A;">Compartilhe nos stories</p>
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">No Instagram, toque em <strong>+</strong>, escolha <strong>Story</strong> e selecione a versão vertical. Na figurinha de <strong>Menção</strong>, adicione <strong>@institutoalmasocial</strong>, assim a gente consegue repostar.</p>
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">No Instagram, toque em <strong>+</strong> e escolha <strong>Story</strong>, com a arte vertical. Inclua a figurinha de <strong>Menção</strong> com <strong>@institutoalmasocial</strong>, para que possamos compartilhar a sua publicação.</p>
 </td></tr><tr>
 <td width="56" valign="top" style="padding:0 0 26px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:40px;line-height:40px;font-weight:200;font-style:italic;color:#B5A36D;">5</td>
 <td valign="top" style="padding:2px 0 26px 0;">
-<p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:18px;line-height:23px;font-weight:800;font-style:italic;color:#7A0E2A;">Troque a capa do LinkedIn</p>
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">No seu perfil, clique no ícone de câmera ou de lápis que aparece sobre a imagem de capa, envie o arquivo da pasta, ajuste o enquadramento e salve.</p>
+<p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:18px;line-height:23px;font-weight:800;font-style:italic;color:#7A0E2A;">Atualize a capa do LinkedIn</p>
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#2E2326;">No seu perfil, clique no ícone de câmera ou de lápis sobre a capa e envie a nova imagem.</p>
 </td></tr></table>
   </td></tr></table>
 </td></tr>
@@ -139,8 +138,8 @@
 <tr><td class="pad" style="padding:36px 20px 8px 20px;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFBEE;border:1px solid #E6DAB4;border-radius:6px;">
     <tr><td align="center" style="padding:30px 20px 6px 20px;">
-      <p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:24px;line-height:30px;font-weight:800;font-style:italic;color:#7A0E2A;">Encontre o seu rosto</p>
-      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#6A5B4E;">Cada foto abre a sua pasta no Drive, com os arquivos prontos para baixar.</p>
+      <p style="margin:0 0 6px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:24px;line-height:30px;font-weight:800;font-style:italic;color:#7A0E2A;">Encontre a sua pasta</p>
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#6A5B4E;">Cada foto dá acesso à pasta individual no Drive, com os arquivos prontos para download.</p>
     </td></tr>
     <tr><td style="padding:26px 6px 10px 6px;">
 <table role="presentation" class="row3" align="center" width="414" cellpadding="0" cellspacing="0" border="0" style="width:414px;margin:0 auto;"><tr><td class="face f3" width="138" align="center" valign="top" style="width:138px;padding:0 0 22px 0;">
@@ -254,26 +253,10 @@
   </table>
 </td></tr>
 
-<!-- LEGENDA -->
-<tr><td class="pad" style="padding:34px 44px 8px 44px;">
-  <p style="margin:0 0 10px 0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;font-weight:800;font-style:italic;color:#7A0E2A;">Uma legenda pronta para você</p>
-  <p style="margin:0 0 18px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Preparamos um texto que você pode copiar e colar no seu post. Use como está, adapte ou escreva o seu: o mais importante é que soe como você.</p>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFBEE;border:1px solid #E6DAB4;"><tr>
-    <td style="border-left:4px solid #B5A36D;padding:22px 24px 22px 22px;">
-      <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#2E2326;">Hoje, o ICE se expande para Instituto Alma Social, e tenho orgulho de fazer parte da equipe que contribui diariamente para a construção dessa história e que seguirá dando vida ao nosso propósito.</p>
-      <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#2E2326;">Ao longo dos últimos meses, acompanhei a construção da nossa nova identidade, um processo que nos convidou a refletir sobre nossa trajetória, nossos valores e o futuro que queremos construir. O novo nome traduz o amadurecimento da organização e a essência do trabalho que realizamos coletivamente.</p>
-      <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#2E2326;">Alma representa o propósito que nos move. Social traduz a força da nossa atuação coletiva. Como equipe, vivenciamos esses valores no dia a dia, nas relações que construímos, nos desafios que enfrentamos e nas iniciativas que desenvolvemos para gerar impacto socioambiental positivo.</p>
-      <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#2E2326;">É com entusiasmo e responsabilidade que sigo fazendo parte dessa história, ao lado de pessoas que acreditam na potência do agir coletivo para transformar o Brasil.</p>
-      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#2E2326;">Convido você a conhecer mais sobre esse novo momento em www.almasocial.org.br</p>
-    </td>
-  </tr></table>
-  <p style="margin:12px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#6A5B4E;">No Instagram, links na legenda não ficam clicáveis. Troque a última frase por “Saiba mais no link da bio de @institutoalmasocial”.</p>
-</td></tr>
-
 <!-- ASSINATURA -->
 <tr><td class="pad" style="padding:40px 44px 0 44px;">
-  <p style="margin:0 0 6px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Obrigada por fazer parte dessa rede.</p>
-  <p style="margin:0 0 36px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;"><strong>Ava</strong> e o time de comunicação</p>
+  <p style="margin:0 0 6px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Contamos com você para que essa história siga em movimento.</p>
+  <p style="margin:0 0 36px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2E2326;">Até breve,<br><strong>Ava</strong> e o time de comunicação</p>
 </td></tr>
 <tr><td class="pad" style="background:#7A0E2A;padding:36px 44px;">
   <p style="margin:0;font-family:'Archivo',Arial,Helvetica,sans-serif;font-size:24px;line-height:30px;color:#B5A36D;">
@@ -283,7 +266,7 @@
 
 <!-- RODAPÉ -->
 <tr><td class="pad" style="padding:22px 44px 26px 44px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#6A5B4E;">
-  Não encontrou o seu rosto ou a pasta não abriu? Responda este e-mail que a gente resolve.<br><br>
+  Em caso de dúvidas sobre os arquivos ou o acesso à pasta, basta responder a este e-mail.<br><br>
   <a href="https://www.almasocial.org.br" target="_blank" style="color:#7A0E2A;font-weight:bold;text-decoration:none;">www.almasocial.org.br</a><br>
   <a href="https://www.instagram.com/institutoalmasocial" target="_blank" style="color:#7A0E2A;text-decoration:none;">@institutoalmasocial</a>
 </td></tr>
